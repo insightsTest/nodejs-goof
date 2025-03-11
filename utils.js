@@ -5,6 +5,7 @@ module.exports = {
   },
 
   uid : function ( len ){
+    var testing = "";
     var str     = '';
     var src     = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     var src_len = src.length;
@@ -16,7 +17,7 @@ module.exports = {
 
     return str;
   },
-//force a pr check
+
   forbidden : function ( res ){
     var body       = 'Forbidden';
     res.statusCode = 403;
